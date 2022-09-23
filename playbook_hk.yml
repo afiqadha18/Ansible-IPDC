@@ -1,6 +1,19 @@
 - name: "Connecting..."
   hosts: switches
   gather_facts: no
+  connection: local
+
+  tasks:
+    ###
+    # Build a Connection
+    #
+    - name: Doing the Telnet
+      telnet:
+        user: ipdc_afiq
+        password: ZpSG6VKqJNdFX9Uk
+        login_prompt: "login: "
+        prompts:
+          - '[>|#]'
 
   tasks:
     ###
