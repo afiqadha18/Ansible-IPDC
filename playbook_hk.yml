@@ -6,7 +6,7 @@
     ###
     # Collect data
     #
-    - name: Gather facts (ios)
+    - name: Gather SW Information
       cisco.ios.ios_facts:
       when: ansible_network_os == 'cisco.ios.ios'
 	  
