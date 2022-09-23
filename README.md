@@ -1,5 +1,6 @@
 ### This is version 1.0
 
+git ini
 git config --global user.email "afiqadhabaharudin@gmail.com"
 git config --global user.name "afiqadha18"
 git clone https://github.com/afiqadha18/ansibleAA
