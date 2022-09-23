@@ -9,7 +9,7 @@
     - name: Gather SW Information
       cisco.ios.ios_facts:
       when: ansible_network_os == 'cisco.ios.ios'
-	  
+
     ###
     # Demonstrate variables
     #
@@ -21,7 +21,7 @@
       copy:
         content: |
           #jinja2: lstrip_blocks: True
-		  
+
           IOS device info:
             {% for host in groups['ios'] %}
             Hostname: {{ hostvars[host].ansible_net_hostname }}
