@@ -1,0 +1,14 @@
+[switches:children]
+hk-br
+hk-ed
+
+[hk-br]
+hk_br01 ansible_host=45.117.123.93
+hk_br01 ansible_host=45.117.123.94
+
+[hk-br:vars]
+ansible_become=yes
+ansible_become_method=enable
+ansible_network_os=cisco.ios.ios
+ansible_user=ipdc_afiq
+ansible_password=CdLGuMK1zPmH7akC
