@@ -19,4 +19,4 @@
         register: test_output
 
     - debug:
-        msg: "{{ test_output.output.0.split('\r\n')[-4] }}"
+        var: "{{ test_output.output.0.split('\r\n')[-4] }}"
