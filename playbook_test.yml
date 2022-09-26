@@ -7,6 +7,7 @@
   tasks:
     - name: Show Version HK-BR01
       telnet:
+        ignore_errors: yes
         user: ipdc_afiq
         password: ZpSG6VKqJNdFX9Uk
         login_prompt: "login: "
@@ -19,4 +20,4 @@
         register: test_output
 
     - debug:
-        var: "{{ test_output.output.0.split('\r\n')[-4] }}"
+        msg: "{{ test_output }}"
