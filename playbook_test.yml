@@ -16,4 +16,4 @@
           - '[>|#]'
         command:
           - terminal length 0
-          - show run
+          - show int desc
