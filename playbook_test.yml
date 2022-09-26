@@ -14,6 +14,6 @@
         timeout: 600
         prompts:
           - '[>|#]'
-        command:
+        commands:
           - terminal length 0
           - show int desc
