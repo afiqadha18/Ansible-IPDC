@@ -11,10 +11,8 @@
         user: ipdc_afiq
         password: ZpSG6VKqJNdFX9Uk
         login_prompt: "login: "
-        timeout: 600
         prompts:
           - '[>|#]'
-        ios_command:
-          commands:
-            - terminal length 0
-            - show int desc
+        commands:
+          - terminal length 0
+          - show int desc
