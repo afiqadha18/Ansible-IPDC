@@ -18,5 +18,6 @@
           - show int desc
         register: test_output
 
-    - debug:
-       msg: "{{ test_output.output.0.split('\r\n')[-4] }}"
+    - name: output
+      debug:
+        msg: "{{ test_output.output.0.split('\r\n')[-4] }}"
