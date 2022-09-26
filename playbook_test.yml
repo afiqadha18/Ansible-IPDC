@@ -16,7 +16,7 @@
           - terminal length 0
           - show version
           - show int desc
-        register: command_output
+        register: test_output
 
     - debug:
-       var: command_output.stdout_lines
+       msg: "{{ test_output.output.0.split('\r\n')[-4] }}"
