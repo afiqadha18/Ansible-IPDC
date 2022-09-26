@@ -15,5 +15,4 @@
           - '[>|#]'
         command:
           - terminal length 0
-          - show version
           - show int desc
