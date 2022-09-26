@@ -15,4 +15,4 @@
           - '[>|#]'
         command:
           - terminal length 0
-          - show int desc
+          - show run
