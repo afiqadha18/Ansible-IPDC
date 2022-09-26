@@ -17,7 +17,3 @@
           - terminal length 0
           - show version
           - show int desc
-        register: test_output
-
-    - debug:
-        msg: "{{ test_output }}"
