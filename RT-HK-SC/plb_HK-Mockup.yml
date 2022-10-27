@@ -1,0 +1,24 @@
+---
+
+- name: show version
+  hosts: HK-MOCK
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Test Mockup HK Edge
+      telnet:
+        user: ipdc_admin
+        password: admin12345
+        login_prompt: "Username: "
+        prompts:
+          - '[>|#]'
+        command:
+          - terminal length 0
+          - conf t
+          - int {{ item[0] }}
+          - "{{ item[1] }}"
+          - "{{ item[2] }}"
+      with_nested:
+        - [ 'tunnel11', 'tunnel12', 'tunnel24']
+        - [ 'no shut' ]
+        - [ 'exit']  
